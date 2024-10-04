@@ -1,7 +1,10 @@
-public class RandomStop {
+import java.security.SecureRandom;
+
+public class SecureRandomDemo {
     public static void main(String[] args) {
+        SecureRandom randomNumber=new SecureRandom();
         while(true) {
-            var number = (int) (Math.random() * 10);
+            var number = randomNumber.nextInt(10);
             System.out.println(number);
             
             if(number == 5) {
@@ -10,6 +13,5 @@ public class RandomStop {
             }
         }
     }
+    
 }
-
-// 0~1之間的亂數 -> *10 -> 0~10
