@@ -5,7 +5,7 @@ public class Level {
         int score;
         char level = '\0'; 
         Scanner input = new Scanner(System.in);
-        System.out.print90("請輸入分數：");
+        System.out.print("請輸入分數：");
         score = input.nextInt();
         
         if(score >= 90) {
