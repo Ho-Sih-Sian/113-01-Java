@@ -4,11 +4,21 @@ public class CashCard {
     private String number;
     private int balance;
     private int bonus;
-
+    //方法的身份辨識＝方法名稱＋參數個數＋參數型態
+    public CashCard(){
+        setNumber("unknown");
+    }
+    public CashCard(String number){
+        setNumber(number);
+    }
+    public CashCard(String number,int balance){
+        setNumber(number);
+        setBalance(balance);
+    }
     public CashCard(String number, int balance, int bonus) {
-        this.number = number;
-        this.balance = balance;
-        this.bonus = bonus;
+        setNumber(number);
+        setBalance(balance);
+        setBonus(bonus);
     }
    public String getNumber(){
         return this.number;
@@ -21,6 +31,24 @@ public class CashCard {
     }
     public void  setNumber(String number){
         this.number=number;
+    }
+
+    public void setBalance(int balance) {
+        if(balance>0){
+            this.balance=balance;
+        }
+        else {
+            System.out.println("格式不符，保持原值");
+        }
+    }
+
+    public void setBonus(int bonus) {
+        if(bonus>0){
+            this.bonus=bonus;
+        }
+        else {
+            System.out.println("格式不符，保持原值");
+        }
     }
 
     //儲值
