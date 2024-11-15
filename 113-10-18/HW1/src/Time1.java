@@ -28,7 +28,11 @@ public class Time1 {
     }
 
     public void setHour(int hour) {
-        this.hour = hour;
+        if (hour >= 0 && hour < 24) {
+            this.hour = hour;
+        } else {
+            System.out.println("時間格式不正確");
+        }
     }
 
     public int getMinute() {
@@ -36,7 +40,11 @@ public class Time1 {
     }
 
     public void setMinute(int minute) {
-        this.minute = minute;
+        if (minute >= 0 && minute < 60) {
+            this.minute = minute;
+        } else {
+            System.out.println("時間格式不正確");
+        }
     }
 
     public int getSecond() {
@@ -44,7 +52,11 @@ public class Time1 {
     }
 
     public void setSecond(int second) {
-        this.second = second;
+        if (second >= 0 && second < 60) {
+            this.second = second;
+        } else {
+            System.out.println("時間格式不正確");
+        }
     }
 
     public void tick(){
@@ -101,3 +113,5 @@ public class Time1 {
     //方法：printStander(以12小時制輸出完整時間 2:05:32 PM
     // )
 }
+
+

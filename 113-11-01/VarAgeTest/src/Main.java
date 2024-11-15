@@ -21,3 +21,4 @@ public class Main {
         System.out.printf("average(d1, d2, d3, d4) = %.1f\n", average("4個參數", d1, d2, d3, d4));
     }
 }
+

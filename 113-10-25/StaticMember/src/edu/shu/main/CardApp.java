@@ -28,9 +28,7 @@ public class CardApp {
             System.out.printf("為(%s, %d, %d)儲值:",
                     cards[i].getNumber(), cards[i].getBalance(), cards[i].getBonus());
             if(i%2==0){
-
                 cards[i].store(input.nextInt());
-
             }
             else {
 

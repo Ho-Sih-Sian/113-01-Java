@@ -9,3 +9,4 @@ class CashCard {
         this.bonus = bonus;
     }
 }
+

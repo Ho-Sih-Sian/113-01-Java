@@ -1,4 +1,4 @@
-public class Role {
+public abstract class Role {
     private String name;
     private int level;
     private int blood;
@@ -26,4 +26,7 @@ public class Role {
     public void setName(String name) {
         this.name = name;
     }
+
+    public abstract void fight();
 }
+

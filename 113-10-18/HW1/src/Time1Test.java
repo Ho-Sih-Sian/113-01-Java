@@ -35,7 +35,7 @@ public class Time1Test {
 
 //使用者輸入時間過了幾秒，用迴圈呼叫tick
 
- //呼叫printUniversal()
+//呼叫printUniversal()
 
 //呼叫printStander()
 
