@@ -7,5 +7,5 @@ public abstract class Fish implements Swimmer{
         return name;
     }
 //    @Override
-//    public abstract void swim();
+//    public abstract void swim()
 }
