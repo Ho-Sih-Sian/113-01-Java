@@ -4,8 +4,8 @@ public class Sum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        var sum = 0;
-        var number = 0;
+        int sum = 0;
+        int number = 0;
         do {
             System.out.print("輸入數字：");
             number = Integer.parseInt(input.nextLine());

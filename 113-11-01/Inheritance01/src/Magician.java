@@ -7,4 +7,3 @@ public class Magician extends Role {
         System.out.println("魔法治療");
     }
 }
-
